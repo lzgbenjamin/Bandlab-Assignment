@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="./index.html">Back To Page 1</a>
+    </div>
+    <div class="audio-buttons">
+        <audio src="new-wave-kit.ogg" id="new-wave-kit"></audio>
+        <audio src="synth-organ.ogg" id="synth-organ"></audio>
+
+        <button class="play-button" id="nwkBtn">Play New Wave Kit</button>
+        <button class="play-button" id="soBtn">Play Synth Organ</button>
+    </div>
+    <script type="text/javascript">
+
+        const newWaveKit = document.getElementById("new-wave-kit")
+        const synthOrgan = document.getElementById("synth-organ")
+
+        const nwkBtn = document.getElementById("nwkBtn")
+        const soBtn = document.getElementById("soBtn")
+
+        nwkBtn.addEventListener("click", event => {
+            newWaveKit.play()
+        })
+
+        soBtn.addEventListener("click", event => {
+            synthOrgan.play()
+        })
+    </script>
+</body>
+
+</html>

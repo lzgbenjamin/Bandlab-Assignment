@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="./page2.html">Go To Page 2</a>
+    </div>
+    <div class="button-div">
+        <button type="button" class="buttons" id="reqPosts">Request All Posts</button>
+        <button type="button" class="buttons" id="sortPosts">Sort Posts A-Z</button>
+
+        <div>
+            <label for="userID">Group by user ID</label>
+            <select name="userID" id="userID">
+                <option value="0">All Posts</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+    </div>
+    <div class="posts-container" data-posts-container id="posts-container">
+        <template data-posts-template>
+            <div class="individual-post">
+                <div class="post-title" data-title></div>
+                <div class="post-body" data-body></div>
+            </div>
+        </template>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
